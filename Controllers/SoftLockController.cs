@@ -8,7 +8,7 @@ namespace FinalProjectAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-
+    [Authorize]
     public class SoftLockController : ControllerBase
     {
         private readonly ISoftLockService _softLockService;
